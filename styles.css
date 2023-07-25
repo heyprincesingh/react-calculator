@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image: url(https://image.slidesdocs.com/responsive-images/background/simple-white-education-pencil-calculator-art-powerpoint-background_644fe4b2ed__960_540.jpg);
+    background-size: 100% 100vh;
+    margin: 0;
+  }
+  
+  .calculator {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 5px 8px #888888;
+  }
+  
+  .display {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 90%;
+    font-size: 24px;
+    padding: 10px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  button.operator {
+    background-color: #f0f0f0;
+  }
+  
+  button.equal {
+    grid-column: span 2;
+  }
+  
